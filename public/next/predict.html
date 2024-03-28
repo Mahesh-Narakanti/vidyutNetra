@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <h1>Predicted Hight:</h1>  <input type="number" id="num">
+      <script>
+        function generateRandomValue() {
+            return (Math.random() * (30 - 0.5) + 0.5).toFixed(2);
+        }
+
+        // Get the input element by its id
+        var inputElement = document.getElementById('num');
+
+        // Set the random value as the input value
+        inputElement.value = generateRandomValue();
+      </script>
+</body>
+</html>
